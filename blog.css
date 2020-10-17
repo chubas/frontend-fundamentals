@@ -14,7 +14,7 @@
 .navbar ul {
   display: flex;
   justify-content: center;
-  font-family: 'Open Sans', sans-serif; 
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -30,7 +30,6 @@
   color: #025157;
 }
 
-
 .fixed-header {
   position: fixed;
   top: 0;
@@ -44,14 +43,21 @@ main {
   text-align: center;
 }
 
+.hidden-menu {
+  display: none;
+}
+
 @media (max-width: 575px) {
   .navbar,
   .actions {
     display: none;
   }
 
+  .hidden-menu {
+    display: block;
+  }
+
   .fixed-header {
-    display: none;
   }
 
   main {
@@ -68,24 +74,23 @@ main {
 }
 
 .actions a {
-  color: #66B64B;
+  color: #66b64b;
   font-size: 0.8em;
   padding: 10px;
 }
 
 .actions button {
-  background-color: #66B64B;
+  background-color: #66b64b;
   color: white;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
 }
 
-
 /* Main section */
 
 title {
-  color:#8b8b8bcc;
+  color: #8b8b8bcc;
 }
 
 h2 {
@@ -102,15 +107,15 @@ p {
 }
 
 html {
-  font-size: 18px; 
-}      
+  font-size: 18px;
+}
 
 h6 {
   columns: rgb(43, 148, 190);
 }
 
 .publish h3 {
-  font-family: 'Alegreya', serif;
+  font-family: "Alegreya", serif;
   font-size: 40px;
   line-height: 48px;
   color: #025157;
