@@ -44,20 +44,59 @@ main {
   text-align: center;
 }
 
+.navbar-toggler {
+  display: none;
+}
+
+.navbar-toggler ul {
+  display: none;
+}
+
+.navbar-toggler input:checked ~ ul {
+  display: block;
+}
+
+.navbar-toggler input {
+  display: none;
+}
+
+.navbar-toggler label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+.navbar-toggler ul li {
+  display: block;
+  background:#fffbf7;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+}
+
 @media (max-width: 575px) {
   .navbar,
   .actions {
     display: none;
   }
-
-  .fixed-header {
-    display: none;
-  }
-
   main {
     margin-top: 0;
   }
+  .navbar-toggler {
+    display: flex;
+    padding-right: 1.5em;
+  }
 }
+
+
 
 .logo {
   padding: 15px;
