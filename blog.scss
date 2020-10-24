@@ -1,4 +1,7 @@
 /*Variables*/
+$actions-color: #66b64b;
+$soft-green-color: #025157;
+
 main {
   margin-top: 72px;
   text-align: center;
@@ -10,27 +13,30 @@ main {
 
 .actions {
   padding: 15px;
-}
-.actions a {
-  color: #66b64b;
-  font-size: 0.8em;
-  padding: 10px;
-}
-.actions button {
-  background-color: #66b64b;
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
+
+  a {
+    color: $actions-color;
+    font-size: 0.8em;
+    padding: 10px;
+  }
+
+  button {
+    background-color: $actions-color;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
 }
 
 /* Main section */
+
 title {
   color: #8b8b8bcc;
 }
 
 h1 {
-  color: #025157;
+  color: $soft-green-color;
 }
 
 p {
@@ -43,28 +49,33 @@ html {
 }
 
 h6 {
-  columns: #2b94be;
+  columns: rgb(43, 148, 190);
 }
 
-.publish h3 {
-  font-family: "Alegreya", serif;
-  font-size: 40px;
-  line-height: 48px;
-  color: #025157;
-}
-.publish > p {
-  font-size: 16px;
-  color: #343434;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-.publish > form {
-  display: flex;
-}
-.publish > form p {
-  color: #025157;
-  margin-right: 18px;
-  flex: 1;
+.publish {
+  h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: $soft-green-color;
+  }
+
+  > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  > form {
+    display: flex;
+  }
+
+  > form p {
+    color: $soft-green-color;
+    margin-right: 18px;
+    flex: 1;
+  }
 }
 
 .promo {
@@ -73,16 +84,16 @@ h6 {
   margin: 100px auto;
   align-items: center;
 }
-
 .explanatory-video {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 1;
-}
-.explanatory-video image {
-  width: 120px;
-  margin-top: 10px;
+
+  image {
+    width: 120px;
+    margin-top: 10px;
+  }
 }
 
 /*
@@ -97,15 +108,17 @@ h6 {
 
   main {
     margin-top: 0;
-
+  
 }
 }*/
+
 /*.fixed-header {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
 }*/
+
 /*.header {
   display: flex;
   justify-content: space-between;
@@ -138,5 +151,3 @@ h6 {
   left: 0;
   background-color: #fffbf7;
 }*/
-
-/*# sourceMappingURL=blog.css.map */
