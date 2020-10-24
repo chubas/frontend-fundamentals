@@ -1,0 +1,224 @@
+/*Seccion header*/
+.header {
+    margin: 40px 20px;
+    font-size: 0;
+    height: 45px;
+    font-family: sans-serif;
+
+    > * {
+        display: inline-block;
+        font-size: 16px;/*Aqui modifico la letra por que en el anterior le puse 0*/
+        vertical-align: middle;
+        height: 100%;
+        line-height: 45px;
+    }
+}
+
+.logo {
+    width: 15%;
+
+    > img {
+        height: 100%;
+    }
+}
+
+@mixin big-text($family) {
+    font-family: $family;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.navbar {
+    width:70%;
+    text-align: center;
+    color:#025157;
+    font-weight: 500;/*tamaño de la fuente*/
+    @include big-text('Matcha');
+}
+
+.actions {
+    width: 15%;
+    text-align: right;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: 600;
+
+    a {
+        color: #67b54b;
+        margin-right: 10px;
+    }
+
+    button {
+        color:white;
+        background-color: #67b54b;
+        padding:12px 14px;
+        border-radius: 5px;
+        border: 0;
+        margin-left: 10px;
+
+    }
+}
+
+
+.menu-item {
+   /*Sale lo mismo si pongo ul{display:flex}*/
+    display:inline;
+    margin-left:25px;
+    margin-right: 25px;
+}
+
+.fixed-header {
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
+  @include big-text("Arial")
+  }
+
+.navbar .menu-item :hover {
+    font-size: 30px;
+    color: violet;
+    background-color: yellow;
+}
+
+/*Seccion main*/
+
+h1{
+    color: #025157;
+    font-family: "Alegreya", serif;
+    margin-bottom: 24px;
+    display: block;
+    font-size: 2em;
+    font-size: 60px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h4{
+    color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1, h4, p {
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+input{
+    border: 1px solid #b6b6b6;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 6px 20px;
+    font-size:14px;
+    height: 55px;
+}
+
+button{
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin:-5px;
+    cursor: pointer;
+    font-size:14px;
+    height: 55px;
+    padding: 6px 20px;
+}
+main{
+    margin-top: 285px;
+  text-align: center;
+}
+
+p{
+    color: #8b8b8bcc;
+    margin-top: 15px;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    line-height: 1.5;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+img{
+    border-style: none;
+    margin: 15px 0;
+}
+
+
+.imagen img{
+    width: 70%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/*Seccion flexbox*/
+
+.publish h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#025157;
+
+}
+.publish p{
+    color: #343434;
+    text-align: justify;
+}
+
+.flexbox{
+    display: flex;
+    width: 70%;
+    margin:100px auto;
+    align-items: center;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+.video figure img{
+    width: 100px;
+}
+
+.publish {
+    flex: 1;
+}
+
+
+body{
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fffbf7;
+    font-family: "Open Sans", sans-serif;
+}
